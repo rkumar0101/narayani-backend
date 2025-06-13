@@ -18,9 +18,6 @@
     "excerpt": {
       "type": "string"
     },
-    "category": {
-      "type": "string"
-    },
     "author": {
       "type": "string"
     },
@@ -29,6 +26,16 @@
     },
     "imageUrl": {
       "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Geopolitics",
+        "Politics",
+        "Science",
+        "Society",
+        "Vision"
+      ]
     }
   }
 }

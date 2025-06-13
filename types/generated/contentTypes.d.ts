@@ -422,7 +422,9 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     author: Schema.Attribute.String;
-    category: Schema.Attribute.String;
+    category: Schema.Attribute.Enumeration<
+      ['Geopolitics', 'Politics', 'Science', 'Society', 'Vision']
+    >;
     content: Schema.Attribute.Blocks;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
